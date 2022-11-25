@@ -1,0 +1,22 @@
+{
+  "name": "access-management-test",
+  "version": "1.0.0",
+  "description": "Helps you in accessing API's based on roles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prashanthreddy-1/AccessManagement-Test.git"
+  },
+  "keywords": [
+    "Access"
+  ],
+  "author": "PrashanthReddy-1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prashanthreddy-1/AccessManagement-Test/issues"
+  },
+  "homepage": "https://github.com/Prashanthreddy-1/AccessManagement-Test#readme"
+}
