@@ -1,0 +1,125 @@
+{
+  "restricted": {
+    "GET": ["/api/users/details/:email", "/api/activities/:propertyId/:emailId", "/api/activities/:emailId"],
+    "POST": [
+      "/api/users/invitation",
+      "/api/zones",
+      "/api/devices",
+      "/api/smartthings",
+      "/api/keyrequest/create",
+      "/api/keyrequest/:keyId/resend",
+      "/api/propertytoken",
+      "/api/users/resendinvitation",
+      "/api/users/cancelinvitation",
+      "/api/devices/action",
+      "/api/devices/refresh-lock",
+      "/api/schedule",
+      "/api/collection",
+      "/api/keyrequest/lockList",
+      "/api/keyrequest/lockReport",
+      "/api/group",
+      "/api/staff"
+    ],
+    "PUT": [
+      "/api/userroles/:propertyId",
+      "/api/properties/:propertyId",
+      "/api/zones/:zoneId",
+      "/api/devices/:deviceId",
+      "/api/smartthings",
+      "/api/keyrequest/:keyId/update-time",
+      "/api/keyrequest/:keyId/update",
+      "/api/keyrequest/:keyId/update-guest",
+      "/api/keyrequest/:keyId/expire",
+      "/api/keyrequest/:keyId/reactivate",
+      "/api/devices",
+      "/api/collection/:collectionId",
+      "/api/collection/updatezonesordevices/:collectionId",
+      "/api/group/:groupId",
+      "/api/staff"
+    ],
+    "PATCH": [],
+    "DELETE": [
+      "/api/users/:email/:propertyId",
+      "/api/zones/:zoneId",
+      "/api/devices",
+      "/api/smartthings/:protocolId",
+      "/api/keyrequest/:keyId",
+      "/api/properties/:propertyId",
+      "/api/propertytoken",
+      "/api/collection/:collectionId",
+      "/api/collection/removeZonesAndDevices/:collectionId",
+      "/api/group/:groupId",
+      "/api/staff/:staffId"
+    ]
+  },
+  "allowedForPropertyEngineer": {
+    "GET": ["/api/users/details/:email", "/api/activities/:propertyId/:emailId", "/api/activities/:emailId"],
+    "POST": [
+      "/api/users/invitation",
+      "/api/devices",
+      "/api/devices/action",
+      "/api/devices/refresh-lock",
+      "/api/zones",
+      "/api/schedule",
+      "/api/keyrequest/create",
+      "/api/keyrequest/:keyId/resend",
+      "/api/smartthings",
+      "/api/keyrequest/lockList",
+      "/api/group/"
+    ],
+    "PUT": [
+      "/api/userroles/:propertyId",
+      "/api/devices/:deviceId",
+      "/api/zones/:zoneId",
+      "/api/keyrequest/:keyId/update-time",
+      "/api/keyrequest/:keyId/update",
+      "/api/keyrequest/:keyId/update-guest",
+      "/api/keyrequest/:keyId/expire",
+      "/api/keyrequest/:keyId/reactivate",
+      "/api/smartthings",
+      "/api/group/:groupId"
+    ],
+    "PATCH": [],
+    "DELETE": [
+      "/api/devices",
+      "/api/keyrequest/:keyId",
+      "/api/zones/:zoneId",
+      "/api/smartthings/:protocolId",
+      "/api/group/:groupId"
+    ]
+  },
+  "allowedForFrontDeskAdmin": {
+    "GET": ["/api/users/details/:email", "/api/activities/:propertyId/:emailId", "/api/activities/:emailId"],
+    "POST": [
+      "/api/users/invitation",
+      "/api/keyrequest/create",
+      "/api/keyrequest/:keyId/resend",
+      "/api/keyrequest/lockList",
+      "/api/group/"
+    ],
+    "PUT": [
+      "/api/userroles/:propertyId",
+      "/api/keyrequest/:keyId/update-time",
+      "/api/keyrequest/:keyId/update",
+      "/api/keyrequest/:keyId/update-guest",
+      "/api/keyrequest/:keyId/expire",
+      "/api/keyrequest/:keyId/reactivate",
+      "/api/group/:groupId"
+    ],
+    "PATCH": [],
+    "DELETE": ["/api/keyrequest/:keyId", "/api/group/:groupId"]
+  },
+  "allowedForFrontDesk": {
+    "GET": [],
+    "POST": ["/api/keyrequest/create", "/api/keyrequest/:keyId/resend"],
+    "PUT": [
+      "/api/keyrequest/:keyId/update-time",
+      "/api/keyrequest/:keyId/update",
+      "/api/keyrequest/:keyId/update-guest",
+      "/api/keyrequest/:keyId/expire",
+      "/api/keyrequest/:keyId/reactivate"
+    ],
+    "PATCH": [],
+    "DELETE": ["/api/keyrequest/:keyId"]
+  }
+}
